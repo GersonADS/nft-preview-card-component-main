@@ -22,6 +22,33 @@ img{
     border-radius: 7px;
 }
 
-.tittle-link{ 
-    
+.title-link .title{ 
+    font-size: 22px;
+    color: #ffffff;
+    margin: 25px 0 20px;
+}
+
+.about{
+    color: var(--primary-soft);
+    font-style: 18px;
+    font-weight: 300;
+    line-height: 25px;
+}
+
+.info{
+    display: flex;
+    justify-content: space-between;
+}
+
+.info .price {
+    color: var(--primary-medium);
+}
+
+.info .days-left{
+    color: var(--primary-soft);
+
+}
+
+.creator{
+    display: flex;
 }
