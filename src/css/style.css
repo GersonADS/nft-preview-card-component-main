@@ -17,38 +17,76 @@ main {
     padding: 25px;
 }
 
-img{
+.nft-card .image-link .image{
     width: 100%;
     border-radius: 7px;
 }
 
-.title-link .title{ 
+.nft-card .title-link .title{ 
     font-size: 22px;
     color: #ffffff;
     margin: 25px 0 20px;
 }
 
-.about{
+.nft-card .about{
     color: var(--primary-soft);
     font-style: 18px;
     font-weight: 300;
     line-height: 25px;
+    margin-bottom: 23px;
 }
 
-.info{
+.nft-card .info{
     display: flex;
     justify-content: space-between;
+    margin-bottom: 23px;
 }
 
-.info .price {
+.nft-card .info .price {
+    display: flex;
     color: var(--primary-medium);
 }
 
-.info .days-left{
-    color: var(--primary-soft);
-
+.nft-card .info .price::before{
+    content: '';
+    background: url(../images/icon-ethereum.svg)no-repeat center;
+    width: 11px;
+    height: 20px;
+    display: inline-block;
+    margin-right: 5px;
 }
 
-.creator{
+.nft-card .info .days-left{
+    color: var(--primary-soft);
     display: flex;
+}
+
+.nft-card .info .days-left::before{
+    content: '';
+    background: url(../images/icon-clock.svg)no-repeat center;
+    width: 15px;
+    display: inline-block;
+    margin-right: 5px;
+}
+
+.nft-card .creator{
+    display: flex;
+    align-items: center;
+    border-top: 1px solid var(--neutral-soft);
+    padding-top: 20px;
+}
+
+.nft-card .creator .avatar{
+    max-width: 35px;
+    border: 1px solid white;
+    border-radius: 50%;
+    margin-right: 15px;
+}
+
+.nft-card .creator .text {
+    color: var(--primary-soft);
+}
+
+.nft-card .creator .text .name {
+    color: #ffffff;
 }
